@@ -34,13 +34,12 @@ const Infinite = () => {
   }, []);
 
   return (
-    <div className="container">
-      {results &&
-        results.slice(0, loadedItems).map((item) => (
-          <div key={item.name} className="item">
-            {item.name}
-          </div>
-        ))}
+    <div className="container mx-auto max-w-[600px] p-5 bg-gray-100 border border-gray-300">
+      {results.slice(0, loadedItems).map((item) => (
+        <div key={item.name} className="item p-2 border-b border-gray-400">
+          {item.name}
+        </div>
+      ))}
     </div>
   );
 };

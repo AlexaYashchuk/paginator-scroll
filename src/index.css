@@ -1,16 +1,1 @@
-.container {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.item {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
-
-.item:last-child {
-  border-bottom: none;
-}
+@import "tailwindcss";

@@ -28,14 +28,16 @@ const PaginationComp = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container mx-auto max-w-[600px] p-5 bg-gray-100 border border-gray-300">
       {currentItems.map((item) => (
-        <div key={crypto.randomUUID()} className="item">
+        <div
+          key={crypto.randomUUID()}
+          className="item p-2 border-b border-gray-400"
+        >
           {item.name}
         </div>
       ))}
       <Pagination
-        className="item"
         current={currentPage}
         pageSize={itemsPerPage}
         total={totalItems}
